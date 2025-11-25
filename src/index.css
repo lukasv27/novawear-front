@@ -2,6 +2,7 @@
 @tailwind components;
 @tailwind utilities;
 @import './styles/select_styles.css';
+@import './styles/navbarClient.css';
 @import "tailwindcss";
 @import "tw-animate-css";
 
@@ -96,7 +97,7 @@
 
 /* --- Base Element Styles con Tailwind Arbitrary Values --- */
 @layer base {
-  body, button, input, select, textarea {
+  button, input, select, textarea {
     border: 1px solid hsl(var(--border));
     outline: 1px solid hsl(var(--ring));
     border-radius: var(--radius);

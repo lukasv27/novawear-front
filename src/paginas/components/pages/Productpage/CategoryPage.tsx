@@ -59,17 +59,17 @@ export default function CategoryPage() {
     };
 
     return (
-        <div className="p-10">
+        <div className="">
         <Navbar />
         <h1 className="text-3xl font-bold mb-6">{categoryName}</h1>
 
         <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-6">
             {products.map((p) => (
-            <div key={p.id} className="border rounded p-4">
+            <div key={p.id} className="border p-4 rounded-lg shadow hover:shadow-lg transition flex flex-col">
                 <img
                 src={p.imageBase64}
                 alt={p.name}
-                className="w-full h-48 object-cover mb-2"
+                className="w-full h-64 object-cover rounded mb-4"
                 />
                 <h3 className="font-bold">Marca: {p.name}</h3>
                 <p>Precio: ${p.price}</p>
@@ -79,7 +79,7 @@ export default function CategoryPage() {
                 <select
                 value={selectedSizes[p.id] || p.size}
                 onChange={(e) => handleSizeChange(p.id, e.target.value)}
-                className="custome-select"
+                className="custome-select mb-4"
                 >
                 {sizes.map(size => (
                     <option key={size} value={size}>{size}</option>

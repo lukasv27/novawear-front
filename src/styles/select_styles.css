@@ -51,11 +51,27 @@
 
 .add-cart-button{
     cursor: pointer;
+    
 }
 
 .add-cart-button:hover{
     cursor: pointer;
-    background-color: blue;
+    background-color: rgb(138, 105, 147);
     color: white;
 }
+.button-delete{
+    
+    margin-top: 15px;
+}
+.navbar_cliente:focus{
+    border-color: black;
+}
+.number-select{
+     outline: none;
+    border-color: rgb(1, 1, 1); /*para indicar el color de los bordes*/
+    border-radius: 4px;
+    padding-left: 10px; /*para hacer que las esquinas sean redondas, entre mayor sea el número, más redondo el borde*/
+    width: 10%; /*para indicar el ancho del elemento, 100% significa que usara el 100% del ancho disponible*/
+    margin-left: 1rem; /*para indicar el espaciado interno del elemento, no confundir con margin que es el espaciado externo*/
 
+}

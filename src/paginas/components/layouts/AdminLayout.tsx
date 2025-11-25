@@ -1,11 +1,11 @@
 
 import { Outlet } from "react-router-dom";
-import NavbarAdmin from "../NavbarAdmin";
+import Navbar from "../NavBar";
 
 export default function AdminLayout() {
   return (
     <div>
-      <NavbarAdmin />
+      <Navbar />
       <div className="p-10 max-w-6xl mx-auto">
         <Outlet /> {/* Aquí se renderiza la página hija */}
       </div>
